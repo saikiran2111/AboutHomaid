@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Cormorant+Infant:wght@700&family=Gothic+A1:wght@700&family=Kdam+Thmor+Pro&family=Noto+Sans+Glagolitic&family=Ubuntu:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+.section2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+}
+.carousel-container {
+  position: relative;
+  max-width: 46%; 
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  height: 450px; 
+  width: 60%; 
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.section2-content {
+  height: 500px;
+  width: 50%;
+  margin-left: 200px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section2-heading {
+  font-family: "roboto";
+  font-size: 35px;
+  margin-top: 15px;
+  color: #ffffff;
+}
+
+.section2-desc {
+  font-size: 20px;
+  font-family: "Noto Sans Glagolitic", sans-serif;
+  color: #969292;
+  margin-top: 35px;
+  height: 250px;
+  width: 320px;
+  padding: 10px;
+}
+
+
+.section-2-btn{
+  background-color: #fff;
+  color: #000;
+  font-size: 15px;
+  height: 40px;
+  width: 120px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.section-2-btn:hover{
+  background:transparent;
+  color: #fff;
+  border: 0.5px solid #fff;
+  font-weight: 700;
+}
+
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px){
+  .section2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    border: 1px solid white;
+    padding: 10px;
+  }
+
+  .carousel-container {
+    max-width: 80%;
+    background-size: cover; 
+  }
+
+
+  .section2-content {
+    width: 80%;
+    margin-left: 0;
+    align-items: center;
+  }
+  
+  .section2-heading {
+    font-size: 30px;
+  }
+  
+  .section2-desc {
+    font-size: 18px;
+    width: 80vw;
+    padding: 5px;
+  }
+
+  .carousel-inner {
+    background-size: cover;
+  }
+  
+  .carousel-item {
+    background-size: cover;
+  }
+  
+
+}
